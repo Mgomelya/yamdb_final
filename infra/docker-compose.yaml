@@ -8,6 +8,7 @@ services:
     env_file:
       - ./.env
   web:
+    image: maksimgomelya/yamdb:1.0.0
     build: ../api_yamdb
     restart: always
     ports:
